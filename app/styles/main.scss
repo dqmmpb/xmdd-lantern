@@ -103,6 +103,7 @@ body {
   min-height: 100%;
   position: relative;
   @include pxTorem(margin-bottom, -50px);
+  background: $default-bg-color;
 }
 
 .content {
@@ -125,6 +126,7 @@ body {
 }
 
 .footer {
+  position: absolute;
   width: 100%;
   background: $default-bg-color;
   text-align: center;
@@ -136,6 +138,10 @@ body {
     margin: 0 auto;
     @include pxTorem(height, 30px);
   }
+}
+
+.svg-panel {
+  font-size: 0;
 }
 
 .index-panel {
