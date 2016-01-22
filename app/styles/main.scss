@@ -215,7 +215,6 @@ body {
     @include pxTorem(left, 48px);
     @include pxTorem(width, 225px);
     @include pxTorem(height, 144px);
-    @include pxTorem(padding, 0, 15px);
     @include pxTorem(font-size, 14px);
     text-align: justify;
     display: table;
@@ -224,6 +223,7 @@ body {
     .riddle-question {
       display: table-cell;
       vertical-align: middle;
+      @include pxTorem(padding, 0, 15px);
     }
 
     .riddle-question-img {
@@ -249,7 +249,6 @@ body {
     @include pxTorem(left, 48px);
     @include pxTorem(width, 225px);
     @include pxTorem(height, 144px);
-    @include pxTorem(padding, 0, 15px);
     @include pxTorem(font-size, 14px);
     text-align: justify;
     display: table;
@@ -258,6 +257,7 @@ body {
     .honor-img {
       display: table-cell;
       vertical-align: middle;
+      @include pxTorem(padding, 0, 15px);
       text-align: center;
       img {
         display: block;
