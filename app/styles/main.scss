@@ -1,0 +1,591 @@
+/* Your app custom files in this file */
+/* Tab bar icons */
+
+// Variables
+@import "variables.scss";
+
+// Mixins
+@import "mixins.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans','Microsoft YaHei',"Helvetica Neue",Helvetica,sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html, body {
+  font-family: 'Open Sans','Microsoft YaHei',"Helvetica Neue",Helvetica,sans-serif;
+}
+
+body {
+  font-size: 32px;
+}
+
+html {
+  height: 100%;
+  background: $default-bg-color;
+}
+
+body {
+  height: 100%;
+  background: $default-bg-color;
+}
+
+.banner {
+  width: 100%;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.btn {
+  display: inline-block;
+  @include pxTorem(padding, 6px, 12px);
+  margin-bottom: 0;
+  @include pxTorem(font-size, 14px);
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 2px;
+}
+
+.btn-default {
+  color: $default-btn-color;
+  background-color: $default-btn-bg-color;
+  border-color: $default-btn-border-color;
+}
+
+.btn-alpha {
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 2px;
+  -webkit-box-shadow: 0 2px 0 $default-btn-box-shadow-color;
+  -moz-box-shadow: 0 2px 0 $default-btn-box-shadow-color;
+  box-shadow: 0 2px 0 $default-btn-box-shadow-color;
+  @include pxTorem(font-size, 15px);
+}
+
+.btn-beta {
+  background: $color-yellow-dark;
+  border-color: $color-yellow-dark;
+  color: $color-brown;
+
+  &.active {
+    background: $color-red-light;
+    border-color: $color-red-light;
+    color: $color-white;
+  }
+}
+
+
+.container {
+  width: 100%;
+  margin: auto;
+  height: auto;
+  min-height: 100%;
+  position: relative;
+  @include pxTorem(margin-bottom, -50px);
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  @include pxTorem(padding-bottom, 50px);
+}
+
+.empty {
+  width: 100%;
+  height: auto;
+  @include pxTorem(min-height, 80px);
+}
+
+.img-bg {
+  display: block;
+  width: 100%;
+}
+
+.footer {
+  width: 100%;
+  background: $default-bg-color;
+  text-align: center;
+  margin: 0 auto;
+  @include pxTorem(padding, 10px, 0);
+
+  img {
+    display: block;
+    margin: 0 auto;
+    @include pxTorem(height, 30px);
+  }
+}
+
+.index-panel {
+  width: 100%;
+  @include pxTorem(height, 361px);
+  .svg {
+    width: 100%;
+    @include pxTorem(height, 361px);
+  }
+}
+
+.btn-rule {
+  position: absolute;;
+  top: 0;
+  right: 0;
+  border-width: 0;
+  background-color: transparent;
+  color: $default-btn-rule-color;
+}
+
+.score-panel {
+  @include pxTorem(padding, 0, 15px);
+  @include pxTorem(margin-top, 4px);
+  @include pxTorem(margin-bottom, 15px);
+  @include pxTorem(font-size, 0px);
+  width: 100%;
+  .label {
+    display: inline-block;
+    vertical-align: middle;
+    color: $default-score-color;
+    @include pxTorem(font-size, 15px);
+    min-width: 1%;
+
+    a {
+      color: $default-score-color;
+    }
+  }
+  .label.pull-right {
+    float: right;
+  }
+}
+
+.btn-panel {
+  @include pxTorem(padding, 0, 15px);
+  @include pxTorem(margin-bottom, 10px);
+  @include pxTorem(font-size, 0px);
+  text-align: center;
+
+  .btn-default {
+    @include pxTorem(width, 140px);
+    @include pxTorem(margin-left, 10px);
+  }
+
+  .btn-default:first-child {
+    margin-left: 0;
+  }
+}
+
+
+.riddle-panel {
+  width: 100%;
+  @include pxTorem(height, 232px);
+  .svg {
+    width: 100%;
+    @include pxTorem(height, 232px);
+  }
+
+  .riddle-question-panel {
+    position: absolute;
+    @include pxTorem(top, 59px);
+    @include pxTorem(left, 48px);
+    @include pxTorem(width, 225px);
+    @include pxTorem(height, 144px);
+    @include pxTorem(padding, 0, 15px);
+    @include pxTorem(font-size, 14px);
+    text-align: justify;
+    display: table;
+    color: $default-riddle-color;
+
+    .riddle-question {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    .riddle-question-img {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      img {
+        display: block;
+        @include pxTorem(width, 160px);
+        @include pxTorem(height, 100px);
+        margin: 0 auto;
+        font-size: 0;
+      }
+      .title {
+        @include pxTorem(padding, 5px, 0, 0, 0);
+      }
+    }
+  }
+
+  .honor-panel {
+    position: absolute;
+    @include pxTorem(top, 59px);
+    @include pxTorem(left, 48px);
+    @include pxTorem(width, 225px);
+    @include pxTorem(height, 144px);
+    @include pxTorem(padding, 0, 15px);
+    @include pxTorem(font-size, 14px);
+    text-align: justify;
+    display: table;
+    color: $default-riddle-color;
+
+    .honor-img {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      img {
+        display: block;
+        @include pxTorem(width, 45px);
+        @include pxTorem(height, 45px);
+        margin: 0 auto;
+        font-size: 0;
+      }
+      .title {
+        @include pxTorem(padding, 5px, 0, 0, 0);
+
+        .honor {
+          @include pxTorem(padding, 5px, 0, 0, 0);
+          @include pxTorem(font-size, 22px);
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+
+.level-panel {
+  @include pxTorem(padding, 0, 15px);
+  @include pxTorem(margin-top, 15px);
+  @include pxTorem(margin-bottom, 10px);
+  @include pxTorem(font-size, 0px);
+  width: 100%;
+  .label {
+    display: inline-block;
+    vertical-align: middle;
+    color: $default-score-color;
+    @include pxTorem(font-size, 15px);
+    min-width: 1%;
+
+    .level {
+      background: no-repeat 0 0;
+      background-size: 100% 100%;
+      display: inline-block;
+      @include pxTorem(font-size, 0px);
+      @include pxTorem(width, 90px);
+      @include pxTorem(height, 19px);
+      vertical-align:top;
+    }
+
+    .level.easy {
+      background-image: url(../images/riddle/stars-3.svg);
+    }
+    .level.hard {
+      background-image: url(../images/riddle/stars-5.svg);
+    }
+  }
+  .label.pull-right {
+    float: right;
+  }
+}
+
+.answer-panel {
+  @include pxTorem(padding, 8px, 15px);
+  @include pxTorem(margin-bottom, 38px);
+  @include pxTorem(height, 85px);
+
+  .answer-textarea {
+    width: 100%;
+    @include pxTorem(height, 70px);
+    resize: none;
+    @include pxTorem(padding, 10px);
+    @include pxTorem(font-size, 15px);
+    border: 1px dashed $color-white;
+    background: transparent;
+    color: $color-white;
+    border-radius: 0;
+    text-align: justify;
+  }
+
+  .radio-panel {
+    width: 100%;
+    @include pxTorem(height, 70px);
+    resize: none;
+    @include pxTorem(padding, 10px);
+    @include pxTorem(font-size, 15px);
+    border: 1px dashed $color-white;
+    background: transparent;
+    color: $color-white;
+    border-radius: 0;
+    text-align: justify;
+
+    ul li {
+      position: relative;
+      @include pxTorem(padding, 0, 0, 12px, 0);
+      @include pxTorem(height, 30px);
+    }
+
+    .radio-square {
+      display: block;
+      margin: 0;
+      padding: 0;
+      @include pxTorem(width, 16px);
+      @include pxTorem(height, 16px);
+      background: url(../images/riddle/radio.svg) no-repeat 0 0;
+      background-size: 100% 100%;
+      border: none;
+      cursor: pointer;
+      position: absolute;
+      @include pxTorem(top, 2px);
+      left: 0;
+
+      &.checked {
+        background-image: url(../images/riddle/radio-checked.svg);
+      }
+
+      input {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 0;
+        height: 0;
+        visibility: hidden;
+      }
+
+      ins {
+        position: absolute;
+        @include pxTorem(top, -4px);
+        @include pxTorem(left, -4px);
+        @include pxTorem(width, 24px);
+        @include pxTorem(height, 24px);
+        display: block;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        opacity: 0;
+        background: rgb(255, 255, 255);
+      }
+
+    }
+
+    label {
+      cursor: pointer;
+      @include pxTorem(font-size, 15px);
+      @include pxTorem(padding, 0, 0, 0, 20px);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+}
+
+.pk-panel {
+  @include pxTorem(padding, 0, 15px);
+  @include pxTorem(margin-top, 15px);
+  @include pxTorem(margin-bottom, 20px);
+  @include pxTorem(font-size, 0px);
+  width: 100%;
+  text-align: center;
+
+  .text {
+    display: inline-block;
+    vertical-align: middle;
+    color: $default-score-color;
+    @include pxTorem(font-size, 15px);
+  }
+}
+
+.result-panel {
+  @include pxTorem(padding, 0, 15px);
+  @include pxTorem(margin-top, 15px);
+  @include pxTorem(margin-bottom, 20px);
+  @include pxTorem(font-size, 0px);
+  width: 100%;
+  text-align: center;
+
+  .label {
+    display: inline-block;
+    vertical-align: middle;
+    color: $default-score-color;
+    @include pxTorem(font-size, 15px);
+
+    background: url(../images/riddle/result.svg) no-repeat 0 0;
+    background-size: 100% 100%;
+    @include pxTorem(width, 140px);
+
+  }
+
+  .text {
+    @include pxTorem(padding, 10px, 0, 0, 0);
+    color: $color-white;
+    @include pxTorem(font-size, 15px);
+
+    .total {
+      color: $default-score-color;
+      @include pxTorem(font-size, 25px);
+    }
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  display: none;
+
+  .overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: $default-modal-overlay-color;
+  }
+
+  .modal-table {
+    position: relative;
+    display: table;
+    height: 100%;
+    width: 100%;
+  }
+
+  .modal-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .modal-panel {
+    position: relative;
+    background: $default-modal-bg-color;
+    @include pxTorem(border-radius, 5px);
+    @include pxTorem(margin, 10px);
+    @include pxTorem(padding, 5px);
+
+    .modal-header {
+      position: relative;
+      @include pxTorem(padding-top, 15px);
+      @include pxTorem(font-size, 16px);
+      @include pxTorem(height, 36px);
+      font-weight: 700;
+      background: $default-modal-header-bg-color;
+      color: $default-modal-header-color;
+      text-align: center;
+    }
+
+    .modal-close {
+      position: absolute;
+      @include pxTorem(top, 5px);
+      @include pxTorem(right, 5px);
+      @include pxTorem(width, 25px);
+      @include pxTorem(height, 25px);
+      background: url(../images/index/close.svg) 0 0 no-repeat;
+      background-size: 100% 100%;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    .modal-content {
+      @include pxTorem(padding, 10px);
+      background: $default-modal-content-bg-color;
+      color: $default-modal-content-color;
+      .modal-text {
+        text-align: justify;
+
+        .rule-text {
+          .text {
+            @include pxTorem(font-size, 14px);
+            line-height: 1.8;
+          }
+        }
+      }
+    }
+
+    .modal-footer {
+      @include pxTorem(padding, 0, 10px, 15px, 10px);
+      position: relative;
+      @include pxTorem(font-size, 13px);
+      background: $default-modal-footer-bg-color;
+      color: $default-modal-footer-color;
+    }
+
+  }
+}
+
+.modal-alert {
+
+  .modal-table-cell {
+    display: table-cell;
+    vertical-align: top;
+    position: absolute;
+    @include pxTorem(top, 23px);
+  }
+
+  .modal-panel {
+    @include pxTorem(margin, 28px);
+    @include pxTorem(width, 264px);
+    @include pxTorem(height, 164px);
+
+    .modal-header {
+      @include pxTorem(padding-top, 15px);
+      @include pxTorem(font-size, 16px);
+      @include pxTorem(height, 21px);
+    }
+
+    .modal-content {
+      @include pxTorem(padding, 10px, 20px);
+      @include pxTorem(width, 254px);
+      @include pxTorem(height, 133px);
+
+      background: $default-modal-content-bg-color;
+      color: $default-modal-content-color;
+      .modal-text {
+        text-align: center;
+
+        .alert-text {
+          @include pxTorem(height, 78px);
+
+          .title {
+            @include pxTorem(font-size, 20px);
+            font-weight: 700;
+          }
+          .text {
+            @include pxTorem(padding, 10px, 10px, 20px, 10px);
+            @include pxTorem(font-size, 14px);
+          }
+        }
+        .btn-panel {
+          @include pxTorem(padding, 0);
+          .btn-default {
+            @include pxTorem(width, 102px);
+          }
+
+        }
+      }
+    }
+
+  }
+}

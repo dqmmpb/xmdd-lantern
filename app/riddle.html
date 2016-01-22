@@ -1,0 +1,154 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <title>猜灯谜，赢大奖</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/flexible_css.js -->
+    <script src="/bower_components/lib.flexible/build/flexible_css.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/flexible.js -->
+    <script src="/bower_components/lib.flexible/build/flexible.js"></script>
+    <!-- endbuild -->
+
+  </head>
+  <body>
+    <section class="container">
+<!--      <div class="content">
+
+        <div class="riddle-panel">
+          <div id="riddle">
+          </div>
+          <div class="riddle-question-panel">
+            <div class="riddle-question-img">
+              <img src="../images/riddle/img-holder.png" class="riddle-img">
+              <div class="title">看图打一成语</div>
+            </div>
+          </div>
+        </div>
+        <div class="level-panel">
+          <div class="label">难度: <span class="level easy"></span></div>
+          <div class="label pull-right">我的积分: <span class="score">8888</span></div>
+        </div>
+        <div class="answer-panel">
+          <textarea class="answer-textarea" placeholder="请输入答案">麻布衣裳白夹里，大红衬衫裹身体，白白胖胖一身油，建设国家出力气。（打一植物）麻布衣裳白夹里，大红衬衫裹身体，白白胖胖一身油，建设国家出力气。（打一植物）麻布衣裳白夹里，大红衬衫裹身体，白白胖胖一身油，建设国家出力气。（打一植物）</textarea>
+        </div>
+
+        <div class="btn-panel">
+          <button type="button" class="btn btn-default btn-alpha">确 定</button>
+          <button type="button" class="btn btn-default btn-alpha">放 弃</button>
+        </div>
+
+      </div>-->
+
+      <div class="content">
+
+        <div class="riddle-panel">
+          <div id="riddle">
+          </div>
+          <div class="riddle-question-panel">
+            <div class="riddle-question">麻布衣裳白夹里，大红衬衫裹身体，白白胖胖一身油，建设国家出力气。（打一植物）</div>
+          </div>
+        </div>
+        <div class="level-panel">
+          <div class="label">难度: <span class="level hard"></span></div>
+          <div class="label pull-right">我的积分: <span class="score">8888</span></div>
+        </div>
+        <div class="answer-panel">
+          <div class="radio-panel">
+            <div class="radio">
+              <ul>
+                <li>
+                  <div class="radio-square">
+                    <input id="answer-1" type="radio" name="answer-radio">
+                    <ins></ins>
+                  </div>
+                  <label for="answer-1">答案1答案1答案1答案1答案1答案1</label>
+                </li>
+                <li>
+                  <div class="radio-square">
+
+                    <input id="answer-2" type="radio" name="answer-radio">
+                    <ins></ins>
+                  </div>
+                  <label for="answer-2">答案2答案2答案2答案2答案2答案2</label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="btn-panel">
+          <a href="show.html" class="btn btn-default btn-alpha">确 定</a>
+          <button type="button" class="btn btn-default btn-alpha btn-abord">放 弃</button>
+        </div>
+
+      </div>
+
+    </section>
+    <footer class="footer">
+      <img src="images/index/logo@2x.png" class="img-logo">
+    </footer>
+
+    <section class="modal modal-alert">
+      <div class="overlay"></div>
+      <div class="modal-table">
+        <div class="modal-table-cell">
+          <div class="modal-panel">
+            <div class="modal-header">
+              <div class="modal-close"></div>
+            </div>
+            <div class="modal-content">
+              <div class="modal-text">
+                <div class="alert-text">
+                  <div class="title">答对啦！</div>
+                  <div class="text">棒棒哒！20积分顺利到手！</div>
+                </div>
+                <div class="btn-panel">
+                  <a href="show.html" class="btn btn-default btn-beta active">再 猜</a>
+                  <button type="button" class="btn btn-default btn-beta">抽 奖</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/fastclick/lib/fastclick.js"></script>
+    <script src="/bower_components/svg.js/dist/svg.js"></script>
+    <script src="/bower_components/svg.pathmorphing.js/dist/svg.pathmorphing.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/riddle.js -->
+    <script src="scripts/riddle.js"></script>
+    <!-- endbuild -->
+
+  </body>
+</html>
