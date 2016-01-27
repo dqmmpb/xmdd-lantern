@@ -23,3 +23,15 @@ draw.image('../images/riddle/xiaoma2.png', dp.xiaoma2.w, dp.xiaoma2.h).move(dp.x
 
 
 /*document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);*/
+
+
+$('.btn-share').click(function(){
+  $('.modal-share').css('display', 'block');
+});
+
+$('.modal-share').click(function(){
+  $('.modal-share').css('display', 'none');
+});
+
+
+

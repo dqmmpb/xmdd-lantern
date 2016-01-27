@@ -41,6 +41,4 @@ $('.modal-alert .modal-close').click(function(){
 });
 
 
-console.log('Hello world');
-
 

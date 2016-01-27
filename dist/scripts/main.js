@@ -139,5 +139,3 @@ $('.btn-alert').click(function(){
 $('.modal-alert .modal-close').click(function(){
   $('.modal-alert').css('display', 'none');
 });
-
-console.log('Hello world');
