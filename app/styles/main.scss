@@ -621,5 +621,11 @@ body {
   }
 }
 
-
-
+.finally-panel {
+  width: 100%;
+  @include pxTorem(height, 372px);
+  .svg {
+    width: 100%;
+    @include pxTorem(height, 372px);
+  }
+}
